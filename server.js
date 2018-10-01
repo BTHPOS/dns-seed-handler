@@ -25,17 +25,17 @@ var handle = function(req, res) {
         res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
       }
       // US (Testnet)
-      else if (hostname.indexOf("us-dnsseed") === 0) {
+      else if (hostname.indexOf("us-testnet-dnsseed") === 0) {
         res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
         res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
       }
       // Europe (Testnet)
-      else if (hostname.indexOf("eu-dnsseed") === 0) {
+      else if (hostname.indexOf("eu-testnet-dnsseed") === 0) {
         res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
         res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
       }
       // Singapore (Testnet)
-      else if (hostname.indexOf("sg-dnsseed") === 0) {
+      else if (hostname.indexOf("sg-testnet-dnsseed") === 0) {
         res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
         res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
       }
