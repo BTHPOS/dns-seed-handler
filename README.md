@@ -53,7 +53,7 @@ Within `server.js`, configure the hostname and ip addresses that you would like 
 
 ## Run
 
-To start the DNS server, run `npm start` or `node server.js`. 
+To start the DNS server, run `sudo npm start` or `sudo node server.js`. If you would like to run it in the background append `> /dev/null 2>&1 &`, for example `sudo npm start > /dev/null 2>&1 &`.
 
 ## Troubleshooting 
 
