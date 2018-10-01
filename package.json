@@ -1,0 +1,28 @@
+{
+  "name": "dns-seed-handler",
+  "version": "1.0.0",
+  "description": "Handles bithereum dns seed requests",
+  "main": "server.js",
+  "dependencies": {
+    "dnsd": "^0.9.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BTHPOS/dns-seed-handler.git"
+  },
+  "keywords": [
+    "bithereum",
+    "dns"
+  ],
+  "author": "Dondrey Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BTHPOS/dns-seed-handler/issues"
+  },
+  "homepage": "https://github.com/BTHPOS/dns-seed-handler#readme"
+}
