@@ -16,6 +16,16 @@ vSeeds.emplace_back("eu-testnet-dnsseed.bithereum.network", true);
 vSeeds.emplace_back("sg-testnet-dnsseed.bithereum.network", true);
 ```
 
+## Quick Note
+When setting up your DNS configuration, make sure that you have created an NS record within the domain provider that points to this server. For example if we want this server to server IP addresses of nodes on the network from a query on us-testnet-dnsseed.bithereum.network, then an NS record for `us-testnet-dnsseed` subdomain should be handled by this server. In most cases, you'll need to create a seperate subdomain that points to this server's IP address, as NS record's typically need to be fully qualified domain names. 
+
+```text
+A Record for dns --> IP of this seed server
+NS Record for us-testnet-dnsseed --> dns.bithereum.network
+NS Record for eu-testnet-dnsseed --> dns.bithereum.network
+NS Record for sg-testnet-dnsseed --> dns.bithereum.network
+```
+
 ## Install 
 
 To install a DNS seed server, you'll need to have `NPM` and `Node JS v9+` installed prior to running the following commands.
