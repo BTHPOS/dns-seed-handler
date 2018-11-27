@@ -45,7 +45,7 @@ npm install
 Within `server.js`, configure the hostname and ip addresses that you would like returned based on the DNS query. 
 
 ```javascript
-      if (hostname.indexOf("us-dnsseed") === 0) {
+      if (hostname.indexOf("x9.us-dnsseed") === 0) {
           res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
           res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
       }
