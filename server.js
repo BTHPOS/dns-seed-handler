@@ -11,33 +11,33 @@ var handle = function(req, res) {
    if (question.type == "A") {
       // US (Mainnet)
       if (hostname.indexOf("x9.us-dnsseed") === 0) {
-        res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
-        res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.234.159.244", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.159.185.178", ttl:ttl});
       }
       // Europe (Mainnet)
       else if (hostname.indexOf("x9.eu-dnsseed") === 0) {
-        res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
-        res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.234.159.244", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.159.185.178", ttl:ttl});
       }
       // Singapore (Mainnet)
       else if (hostname.indexOf("x9.sg-dnsseed") === 0) {
-        res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
-        res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.234.159.244", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.159.185.178", ttl:ttl});
       }
       // US (Testnet)
       else if (hostname.indexOf("x9.us-testnet-dnsseed") === 0) {
-        res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
-        res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.234.159.244", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.159.185.178", ttl:ttl});
       }
       // Europe (Testnet)
       else if (hostname.indexOf("x9.eu-testnet-dnsseed") === 0) {
-        res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
-        res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.234.159.244", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.159.185.178", ttl:ttl});
       }
       // Singapore (Testnet)
       else if (hostname.indexOf("x9.sg-testnet-dnsseed") === 0) {
-        res.answer.push({name:hostname, type:'A', data:"54.162.119.37", ttl:ttl});
-        res.answer.push({name:hostname, type:'A', data:"18.212.4.44", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.234.159.244", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"54.159.185.178", ttl:ttl});
       }
    }
 
