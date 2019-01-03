@@ -7,13 +7,14 @@ var handle = function(req, res) {
    var hostname = question.name || "";
    var length = hostname.length;
    var ttl = Math.floor(Math.random() * 3600);
-
+   console.log(question);
+   
    if (question.type == "A") {
       // US (Mainnet)
       if (hostname.indexOf("x9.us-dnsseed") === 0) {
         res.answer.push({name:hostname, type:'A', data:"54.89.190.95", ttl:ttl});
         res.answer.push({name:hostname, type:'A', data:"54.90.61.152", ttl:ttl});
-         res.answer.push({name:hostname, type:'A', data:"3.83.48.239", ttl:ttl});
+        res.answer.push({name:hostname, type:'A', data:"3.83.48.239", ttl:ttl});
       }
       // Europe (Mainnet)
       else if (hostname.indexOf("x9.eu-dnsseed") === 0) {
