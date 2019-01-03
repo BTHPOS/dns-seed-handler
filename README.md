@@ -55,6 +55,15 @@ Within `server.js`, configure the hostname and ip addresses that you would like 
 
 To start the DNS server, run `sudo npm start` or `sudo node server.js`. If you would like to run it in the background append `> /dev/null 2>&1 &`, for example `sudo npm start > /dev/null 2>&1 &`.
 
+## Testing with DIG
+
+Within the terminal or cmd of your requesting machine, type in the following to test a route.
+
+```bash
+dig x9.us-dnsseed.bithereum.network A
+```
+The corresponding A records should appear. Replace A with the record you intend on requesting.
+
 ## Troubleshooting 
 
 In some cases, port 53 will be in use by a process acting as a DNS. 
