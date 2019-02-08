@@ -4,7 +4,8 @@
   "description": "Handles bithereum dns seed requests",
   "main": "server.js",
   "dependencies": {
-    "dnsd": "^0.9.6"
+    "dnsd": "^0.9.6",
+    "got": "^9.6.0"
   },
   "devDependencies": {},
   "scripts": {
