@@ -2,7 +2,7 @@ var dnsd = require('dnsd');
 var got = require("got");
 var PORT = 5333;
 var INTERFACEIP = '0.0.0.0'
-var limit = 20; // max number of hosts
+var limit = 25; // max number of hosts
 var addresses = [];
 
 var fetchAddresses = function() {
@@ -16,6 +16,13 @@ var fetchAddresses = function() {
             if (data.data) {
                 addresses = data.data.splice(0,limit).map(function(entry) {
                     return entry.address;
+                });
+                addresses = addresses.filter(function(entry) {
+                    return [
+                      "3.94.59.38",
+                      "3.88.162.163",
+                      "3.84.58.236"
+                    ].indexOf(entry.address) == -1
                 });
             }
       });
